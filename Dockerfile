@@ -6,4 +6,5 @@ COPY . .
 RUN npm run build 
 
 From nginx
+EXPOSE 80
 Copy --from=builder /app/build /usr/share/nginx/html
